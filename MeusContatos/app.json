@@ -1,9 +1,17 @@
-{
+
+  {
   "expo": {
-    "name": "MeusContatos",
-    "slug": "MeusContatos",
+    "name": "Meus Contatos",
+    "slug": "meus-contatos",
     "version": "1.0.0",
     "orientation": "portrait",
+    "backgroundColor": "#208AEF", 
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#208AEF"
+    },
+
     "icon": "./assets/images/icon.png",
     "scheme": "meuscontatos",
     "userInterfaceStyle": "automatic",
@@ -23,7 +31,7 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-   "plugins": [
+    "plugins": [
       [
         "expo-splash-screen",
         {
@@ -31,7 +39,9 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
-      ]
+      ],
+      "expo-router",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true,
